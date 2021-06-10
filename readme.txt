@@ -1,4 +1,5 @@
 https://nodejs.org/en/
+https://www.npmjs.com/package/nodemon
 https://www.npmjs.com/package/websocket
 npm install websocket
 <script src="https://use.fontawesome.com/b02a21405f.js"></script>
