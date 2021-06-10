@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WECHAT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">WECHAT</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Username</label>
+                    <input type="text" class="form-control form-control-sm" name="" id="txtUsername"
+                        aria-describedby="helpId" placeholder="Username">
+                </div>
+                <label for="">Image</label>
+                <div class="form-group">
+                    <img style="width: 5rem;height: auto;" id="img" class="m-1 border border-success rounded-circle">
+                    <input type="text" class="form-control form-control-sm" name="" id="imgURL"
+                        aria-describedby="helpId" placeholder="Image Link" src="">
+                </div>
+
+                <button type="button" id="btnReg" class="btn btn-success btn-block btn-sm"
+                    onclick="onRegister()">Register!</button>
+            </div>
+            <div class="col-md-8">
+
+                <div class="container bg-dark text-light">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img id="chatUserLogo" style="width: 2rem;height: auto;"
+                                class="m-1 border border-success rounded-circle"
+                                src="https://cdn4.iconfinder.com/data/icons/instagram-ui-twotone/48/Paul-18-512.png">
+                        </div>
+                        <div class="col-md-11">
+                            <p class="text-left" id="chatUsername"></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="chatBox" class="m-1" style="height: 400px; overflow: scroll;">
+
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" id="txtMessage" class="form-control" placeholder="Message"
+                        aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" onclick="sendMessage()"><i
+                                class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/b02a21405f.js"></script>
+<script src="./wsclient.js"></script>
+
+</html>
